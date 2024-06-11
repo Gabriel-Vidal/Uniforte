@@ -1,0 +1,16 @@
+.accordionContainer {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.heading {
+  font-weight: bold;
+}
+
+.accordionContainer > div{
+  margin-bottom: 2rem;
+  background: none;
+  border: none;
+}
