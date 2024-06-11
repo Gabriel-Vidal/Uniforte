@@ -1,0 +1,146 @@
+:root {
+    --gradient: linear-gradient(90deg, #c54444, #666dbd)
+}
+
+
+.heroOverlay{
+    height: 100%;
+    object-fit:cover;
+    }
+
+.heroImg{
+    min-width: 100vw;
+    height: 95vh;
+    position: relative;
+    z-index: 0;
+    object-fit: cover;
+}
+
+.heroTextContainer{
+    position: absolute;
+    top: 25rem;
+    left: 10rem;
+    width: 45rem;
+    z-index: 2;
+  }
+
+  .heroText ~ p{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+  }
+
+  h1{
+    font-size:2.8rem;
+    color:white;
+    font-weight: 1000;
+  }
+
+  .button_container {
+    display: flex;
+    gap:1rem;
+    position: absolute;
+    top:42rem;
+    left:10rem;
+    z-index: 5;
+    white-space: nowrap;
+}
+
+.hero_button1, .hero_button2 {
+    font-size: 1.5rem;
+    padding: 0.8rem 1.25rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.hero_button1 {
+    background: linear-gradient(90deg, #c54444, #666dbd);
+    color: white;
+}
+
+.hero_button1:hover {
+    background: linear-gradient(90deg, #666dbd, #c54444);
+}
+
+.hero_button2 {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 35px;
+    position: relative;
+    color: white;
+    border-image: linear-gradient(90deg, #666dbd, #c54444) 1;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.hero_button2 p {
+    margin: 0;
+    color: white;
+
+}
+
+
+/*.hero_button2 {
+    display: block;
+    box-sizing: border-box;
+    margin: 0 15px;
+    padding: 10px 35px;
+    border: 2px;
+    border-style:solid;
+    border-radius: 10rem;
+    position: relative;
+    color: --gradient;
+    border-width: 2%; 
+    border-color: transparent; 
+  
+
+    border-image: linear-gradient(90deg, #666dbd, #c54444) 1;
+
+}
+
+
+.hero_button2::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: blue;
+}
+
+.hero_button2 p{
+    color: white;
+}*/
+
+/*.hero_button2::before, .hero_button2::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(100% - 0.01px);
+    height: calc(100% - 0.01px);
+    background: linear-gradient(90deg, #666dbd, #c54444);
+    border-radius: 8px;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+
+}*/
+
+
+.hero_button2:hover {
+    color: white;
+}
+
+.hero_button2:hover::before {
+    background: linear-gradient(to left, #c54444, #666dbd);
+    background: linear-gradient(to left, #666dbd, #c54444);
+}
+
+@media (max-width: 1200px) {
+
+  .heroImg{
+    width: 1200px;
+    height: 900px;
+}
+}
