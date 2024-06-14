@@ -88,7 +88,7 @@
   .svg_QuemSomos{
     content: "";
     position: absolute;
-    z-index: -50;
+    z-index: -10;
     top:275.2vh;
     right: 0;
     }
